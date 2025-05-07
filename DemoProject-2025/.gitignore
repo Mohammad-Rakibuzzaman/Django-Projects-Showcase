@@ -4,7 +4,7 @@ venv/
 .Python
 
 # Pipenv lock file (optional)
-Pipfile.lock
+./Pipfile.lock
 
 # Byte-compiled / cache files
 *.pyc

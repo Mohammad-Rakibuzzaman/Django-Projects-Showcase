@@ -4,6 +4,8 @@ finally to activate virtual environment: pipenv shell
 then create project : django-admin startproject demoproject
 to create app : py manage.py startapp firstapp
 
+if anyone wanna clone this: 
+just download and run: pipenv install
 
 
 

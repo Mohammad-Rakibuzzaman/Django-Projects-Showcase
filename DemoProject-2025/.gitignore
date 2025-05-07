@@ -8,5 +8,3 @@ static/
 *.log
 *.swp
 .DS_Store
-Pipfile
-Pipfile.lock

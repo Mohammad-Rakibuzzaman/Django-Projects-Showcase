@@ -7,6 +7,8 @@ to create app : py manage.py startapp firstapp
 if anyone wanna clone this: 
 just download and run: pipenv install
 
+to abort it : exit
+
 
 
 2. Create a Virtual Environment

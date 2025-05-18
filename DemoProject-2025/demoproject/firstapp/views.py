@@ -8,7 +8,7 @@ from django.views import View
 def hello_func(response):
       return HttpResponse("Hello from func")
 
-
+#classbased 
 class heloClass(View):
       def get(self, response):
             return HttpResponse("Hello from class")

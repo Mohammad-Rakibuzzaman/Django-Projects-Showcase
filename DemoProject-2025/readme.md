@@ -22,4 +22,4 @@ This is a **Django-based reservation system** following the **Model-View-Templat
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/yourusername/django-reservation.git
-cd django-reservation
+

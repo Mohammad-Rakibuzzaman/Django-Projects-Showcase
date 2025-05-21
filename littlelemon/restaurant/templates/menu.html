@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+
+      .menu-table {
+            width: 100%;
+            border-collapse: collapse;
+      }
+
+      .menu-table th, .menu-table td {
+            padding: 15px;
+            font-size: 20px; /* Makes the font bigger */
+            border: 1px solid #ddd;
+            text-align: left;
+            background-color: rgb(255, 255, 255); /* Sets cell background to black */
+            color: rgb(0, 0, 0); /* Ensures text remains visible */
+      }
+
+      .menu-table th {
+            background-color: #333; /* Slightly lighter black for headers */
+            font-weight: bold;
+      }
+
+      #ultra {
+            color: #ddd;
+      }
+
+
+
+</style>
+
+
+<h1>Menu</h1>
+<table class="menu-table">
+    <thead>
+        <tr>
+            <th id="ultra">Name</th>
+            <th id="ultra">Price</th>
+            <th id="ultra">Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in menu %}
+        <tr>
+            <td>{{ item.name }}</td>
+            <td class="menu-price">{{ item.price }}.00</td>
+            <td><a href="{% url 'menu_item' pk=item.pk %}">View Details</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

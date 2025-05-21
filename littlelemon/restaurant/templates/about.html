@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<section>
+  <article>
+    <h1>About Us</h1>
+    <!--Begin row-->
+    <div class="row">
+      <!--Begin col-->
+      <div class="column">
+        <p>
+          Welcome to Cheesy Craft-Chef, where culinary artistry meets the irresistible love of cheese! We specialize in crafting cheese-infused delights, combining creativity and premium ingredients to deliver a mouthwatering experience.
+        </p>
+        <p>
+          At Cheesy Craft-Chef, we believe that every dish should be a masterpiece. Whether it's gourmet cheesy burgers, sizzling kebabs, or creamy pasta, our goal is to bring flavor, quality, and comfort to your plate.
+        </p>
+
+        <p>
+          The restaurant has a rustic and relaxed atmosphere with moderate
+          prices, making it a popular place for a meal any time of the day.
+        </p>
+
+        <p>
+          Little Lemon is owned by two Italian brothers, Mario and Adrian, who
+          moved to the United States to pursue their shared dream of owning a
+          restaurant.
+        </p>
+
+        <p>
+          To craft the menu, Mario relies on family recipes and his experience
+          as a chef in Italy.
+        </p>
+
+        <p>
+          ✔ Innovative & Unique Recipes – Elevating classic dishes with a cheesy twist. ✔ Fresh & High-Quality Ingredients – No compromises on taste or texture. ✔ Passion for Culinary Excellence – Every dish is prepared with love and precision. ✔ Customer Satisfaction Guaranteed – Your happiness fuels our creativity!
+        </p>
+      </div>
+      <!--End col-->
+
+      <!--Begin col-->
+      <div class="column">
+        <figure class="figure">
+          <img
+            src="{% static 'img/Ubc5Q1e0GB-u2g2iJ.jpeg' %}"
+            alt="Mario and Adrian"
+          />
+          <figcaption class="figure-caption">
+            Little Lemon owners Mario and Adrian.
+          </figcaption>
+        </figure>
+      </div>
+      <!--End col-->
+    </div>
+    <!--End row-->
+  </article>
+</section>
+{% endblock %}

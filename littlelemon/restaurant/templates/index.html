@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<style>
+  #her_text{
+    font-size: 2em;
+    color: rgb(231, 146, 18);
+    text-align: center;
+    margin-top: 20px;
+  }
+ 
+</style>
+<section>
+    <article id="her">
+      <h1 class="heading_shadow">SPECIAL OFFER</h1>
+      <p id="her_text">
+        20% Off till 30th September
+      </p>
+      <!-- <a href="#" class="cta"> Book now </a> -->
+    </article>
+  </section>
+  <section>
+    <article>
+      <h2>🥩 Seekh Kebab</h2>
+      <img src="{% static 'img/305630688_583060729986572_3317071858813967812_n.jpg' %}">
+      <p>
+        Juicy, spiced minced meat skewers grilled to perfection, served with a side of mint chutney and fresh salad. A flavorful delight for barbecue lovers.
+      </p>
+      <p>
+        <a href="{% url 'menu' %}">See our new menu</a>
+      </p>
+    </article>
+    <article>
+      <h2>🍢 Shish Kebab</h2>
+      <img src="{% static 'img/aa295c4909e0602645e0b20fb29f86fb.jpg' %}">
+      <p>
+        Tender cubes of marinated lamb or chicken, grilled over an open flame, infused with smoky goodness. Served with warm pita bread and garlic sauce.
+      </p>
+      <p>
+        <a href="{% url 'book' %}">Book your table now</a>
+      </p>
+    </article>
+    <article>
+      <h2>🌯 Doner Kebab Wrap</h2>
+      <img src="{% static 'img/kebab-express.jpg' %}">
+      <p>
+        Slow-roasted, thinly sliced meat wrapped in soft flatbread, layered with crisp veggies, tangy yogurt sauce, and a hint of spice. A perfect on-the-go meal.
+      </p>
+     
+    </article>
+  </section>
+{% endblock %}
